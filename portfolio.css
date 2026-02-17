@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+body{
+    font-family:monospace;
+    background: #fba43a;
+    color:rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+/* <!-- header --> */
+
+header{
+    color: rgb(105, 26, 26);
+    padding: 20px;
+    top: 0; 
+}
+
+h1{
+    color: rgb(255, 191, 0);
+    background-color:#ff5100
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:#ff5100;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 174, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 3s;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 226, 3);
+}
+
+/*hero section*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2{
+    font-size:larger;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+section{
+    padding: 20px;
+}
+
+section h2{
+    margin-bottom: 30px;
+    font-size: medium;
+}
+
+skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card{
+    background: #f27d10;
+    padding: 20px;
+    border:#000000 solid 2px;
+    text-align: center;
+}
+
+.skill-card:hover{
+    background: #000000;
+    color: rgb(251, 46, 46);
+    border: rgb(0, 0, 0) solid 2px;
+    transition: 0.3s;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);s
+}
+
+/*projects section*/
+
+.projects{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card{
+    background: #ff4e02;
+    padding: 20px;
+    border:#661800 solid 2px;
+    text-align: center;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+    background: #f4350f9d;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    background-color: #ad4121;
+    border:#000000 solid 2px;
+    border-radius:6px;
+    margin-top:5px;
+    margin-bottom: 15px;
+
+}
+
+footer{
+    background-color: #fc9218;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+button{
+    background-color: #fd0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: #ff5500;
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+}
